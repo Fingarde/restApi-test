@@ -1,0 +1,43 @@
+{
+    "get_players": {
+        "type": "get",
+        "description": "Get number of players connected",
+        "url": "/server/players"
+    },
+    "get_players_array": {
+        "type": "get",
+        "description": "Get an array of players connected",
+        "url": "/server/players/all"
+    },
+    "get_player_name": {
+        "type": "get",
+        "description": "Get player's informations by name",
+        "url": "/server/players/name/{name}",
+        "parameters": [
+            {
+            "name": "name",
+            "description": "Name of the pop"
+            }
+        ]
+    },
+    "get_player_uuid": {
+        "type": "get",
+        "description": "Get player's informations by uuid",
+        "url": "/server/players/uuid/{uuid}"
+    },
+    "get_player_uuid_post": {
+        "type": "post",
+        "description": "Get player's informations by uuid",
+        "url": "/server/players/uuid/{uuid}"
+    },
+    "get_player_put": {
+        "type": "put",
+        "description": "Get player's informations by uuid",
+        "url": "/server/players/uuid/{uuid}"
+    },
+    "get_player_uuid_delete": {
+        "type": "delete",
+        "description": "Get player's informations by uuid",
+        "url": "/server/players/uuid/{uuid}"
+    }
+}

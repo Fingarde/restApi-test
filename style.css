@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Fira Sans", sans-serif;
+}
+
+.api-get {
+  background-color: #20639b;
+}
+.api-post {
+  background-color: #3caea3;
+}
+.api-put {
+  background-color: #ed9e5e;
+}
+.api-delete {
+  background-color: #ed553b;
+}
+
+.api-element-identifier {
+  border-radius: 5px;
+  display: inline-block;
+
+  font-size: 20px;
+
+  padding: 5px;
+  color: white;
+}
+
+.api-element-url {
+  color: #20639b;
+  margin-left: 10px;
+}
+
+.api-element-description {
+  color: #ed553b;
+}
+
+.api-list {
+  margin: 20px 15%;
+}
+
+.api-element {
+  cursor: pointer;
+
+  list-style: none;
+
+  margin-top: 5px;
+
+  border-radius: 5px;
+  border: solid #a9a9a9 1px;
+}
+
+.api-element-content {
+  display: none;
+
+  margin: 3px;
+  margin-top: 20px;
+}
+
+.api-element-header {
+  padding: 8px;
+
+  border-radius: 2px;
+  border-bottom: solid #a9a9a9 1px;
+
+  display: flex;
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+.api-element-header-left {
+  display: flex;
+  align-items: center;
+}
