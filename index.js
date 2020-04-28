@@ -9,7 +9,7 @@ http
     let apiElement = fs.readFileSync("api-element.html").toString();
     let css = fs.readFileSync("style.css").toString();
     let html = fs.readFileSync("index.html").toString();
-	let js = fs.readFileSync("main.js").toString();
+    let js = fs.readFileSync("main.js").toString();
 
     switch (req.url) {
       case "/style.css":
@@ -28,20 +28,19 @@ http
           let type = json[key].type;
           let description = json[key].description;
           let url = json[key].url;
-		  let parameters = json[key].parameters;
-		
-		  let parametersValue = ""
-		  if(parameters != undefined) {
+          let parameters = json[key].parameters;
 
-		  }
+          let parametersValue = "";
+          if (parameters != undefined) {
+          }
 
           apiList += apiElement
             .replace(/{apiName}/g, key)
-			.replace(/{apiType}/g, type)
-			.replace(/{apiTypeUpperCase}/g, type.toUpperCase())
+            .replace(/{apiType}/g, type)
+            .replace(/{apiTypeUpperCase}/g, type.toUpperCase())
             .replace(/{apiUrl}/g, url)
-			.replace(/{apiDescription}/g, description)
-			.replace(/{apiParameters}/g, parameters);
+            .replace(/{apiDescription}/g, description)
+            .replace(/{apiParameters}/g, parameters);
         });
 
         res.writeHead(200, { "Content-Type": "text/html" });
